@@ -1,0 +1,58 @@
+#advanced-nav {
+    background-color: black;
+}
+
+.advanced-nav ul {
+    display: flex;
+    justify-content: space-around;  
+  
+    padding: 0;
+    margin:0;
+}
+
+.icon {
+    display:flex;
+    /* background-color: red; */
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+    /* L'icone est affectee par text et font */
+    text-align: center; 
+    font-size: 35px;
+}
+
+li {
+    display: flex; 
+    width:100%;
+    
+}
+li a {
+    display: flex;
+    background-color:rgb(36, 38, 40) ;
+    text-decoration: none;  
+    width:100%;  
+    color:white;
+    padding:10px;
+    padding: 0;
+    
+}
+
+li a div {
+    display:flex;
+    flex-direction: column;  
+    font-weight: bold;
+    margin-right:10px;
+}
+
+div span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+
+    .advanced-nav ul {
+        flex-direction: column; 
+    }
+}    

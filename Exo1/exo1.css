@@ -1,0 +1,41 @@
+.menu-section {
+    display: flex; 
+    flex-direction: column;
+}
+
+#single-nav {
+    background-color:rgb(54, 51, 51);
+}
+
+#single-nav ul {
+    display: flex;
+    justify-content: space-around;  
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+
+li {
+    list-style-type: none;
+   
+    width:100%;
+}
+li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;    
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+}
+
+@media screen and (max-width:750px) {
+    #single-nav ul {
+        flex-direction: column;
+    }
+
+    li a {
+        justify-content: initial;
+    }
+}

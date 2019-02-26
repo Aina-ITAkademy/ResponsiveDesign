@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: deepskyblue;
+    color: black;
+    border-style: solid;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: deepskyblue;
+    color: black;
+    border-style: solid;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    /* Les navigateur ajoutes du margin/padding pour les listes*/
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0; /* To remove default left padding */
+}
+
+ul li {
+    list-style-type: none;
+    /* width: 100%; */
+    
+}
+
+li a {
+    text-decoration: none;    
+    font-weight: bold;
+    color:white;
+}
+
+
+#main-section{
+    border-style: solid;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#menu-section {
+    border-style: solid;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column; 
+    
+}
+#menu-section h2 {
+    text-align: center;
+}
+
+#content-section {
+    border-style: solid;
+    background-color: lightcoral;
+    text-align: center;
+}
+#ad-section {
+    border-style: solid;
+    background-color: blueviolet;
+    display : flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:750px) {
+    header {
+        background-color: deepskyblue;
+    }
+    footer {
+        background-color: deepskyblue;
+    }
+
+    #main-section{
+        flex-direction: column;
+    }
+    #menu-section {
+        background-color: blueviolet;
+    }
+    #content-section {
+        order: -1;
+        background-color: lightcoral;
+    }
+    #menu-section nav {
+        text-align: center;
+    }
+    #ad-section {
+        background-color: blueviolet;
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}  
+
+@media screen and (max-width:1050px) and (min-width:750px) {
+    header {
+        background-color: green;
+    }
+    footer {
+        background-color: green;
+    }
+    #menu-section {
+        background-color: red;
+        
+    }
+    #main-section{
+        /* flex-direction: row; */
+        flex-flow:row wrap;
+    }
+
+    #content-section {
+        background-color: brown;
+        
+    }
+
+    #menu-section nav {
+        text-align: center;
+    }
+    #ad-section {
+        background-color: blue;
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #ad2 {
+        justify-self: flex-end;
+    }
+}
