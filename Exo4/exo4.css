@@ -19,6 +19,7 @@ header div {
     align-items: center;
     width:400px;
     height:200px;
+    margin:20px;
 }
 
 #sec1 {
@@ -56,6 +57,11 @@ header div {
     header {
         background-color: initial;
         flex-direction: column;
-        
+        align-items: center;
+    }
+
+    #sec2 {
+        flex-direction: column;
+        align-items: center;
     }
 }
