@@ -1,16 +1,22 @@
+body {
+    color :black;
+    
+}
+
 header {
     display: flex;
     justify-content: center;
     background-color: deepskyblue;
-    color: black;
+    
     border-style: solid;
+    border-color: black;
 }
 footer {
     display: flex;
     justify-content: center;
     background-color: deepskyblue;
-    color: black;
     border-style: solid;
+    border-color: black;
 }
 
 ul {
@@ -37,11 +43,13 @@ li a {
 #main-section{
     border-style: solid;
     display: flex;
+    border-color: black;
     /* justify-content: center; */
 }
 
 #menu-section {
     border-style: solid;
+    border-color: black;
     background-color: blueviolet;
     display: flex;
     flex-direction: column; 
@@ -53,11 +61,13 @@ li a {
 
 #content-section {
     border-style: solid;
+    border-color: black;
     background-color: lightcoral;
     text-align: center;
 }
 #ad-section {
     border-style: solid;
+    border-color: black;
     background-color: blueviolet;
     display : flex;
     flex-direction: column;
@@ -65,6 +75,9 @@ li a {
 
 
 @media screen and (max-width:750px) {
+    body {
+        color:white;
+    }
     header {
         background-color: deepskyblue;
     }
@@ -76,17 +89,17 @@ li a {
         flex-direction: column;
     }
     #menu-section {
-        background-color: blueviolet;
+        background-color: plum;
     }
     #content-section {
         order: -1;
-        background-color: lightcoral;
+        background-color: pink;
     }
     #menu-section nav {
         text-align: center;
     }
     #ad-section {
-        background-color: blueviolet;
+        background-color: plum;
         display : flex;
         flex-direction: row;
         justify-content: space-between;
@@ -95,24 +108,29 @@ li a {
 }  
 
 @media screen and (max-width:1050px) and (min-width:750px) {
+    body {
+        color:white;
+    }
     header {
         background-color: green;
     }
     footer {
         background-color: green;
     }
-    #menu-section {
-        background-color: red;
-        
-    }
     #main-section{
         /* flex-direction: row; */
         flex-flow:row wrap;
     }
 
+    #menu-section {
+        background-color: red;
+        flex: 0 0 auto;
+    }
+
+
     #content-section {
         background-color: brown;
-        
+        flex: 1 0 50%;
     }
 
     #menu-section nav {
@@ -123,6 +141,7 @@ li a {
         display : flex;
         flex-direction: row;
         justify-content: space-between;
+        flex: 1 1 100%;
     }
     #ad2 {
         justify-self: flex-end;

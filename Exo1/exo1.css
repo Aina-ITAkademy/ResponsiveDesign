@@ -17,8 +17,8 @@
 
 li {
     list-style-type: none;
-   
-    width:100%;
+    flex-grow: 1;
+    /* width:100%; */
 }
 li a {
     display: flex;
@@ -36,6 +36,6 @@ li a {
     }
 
     li a {
-        justify-content: initial;
+        justify-content: initial; /* Text a gauche*/
     }
 }

@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+}
+
+header {
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+}
+
+header div {
+    background-color:red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:200px;
+}
+
+#sec1 {
+    display: flex;
+    justify-content: space-around;
+    margin : 10px;
+}
+#sec1 div {
+    background-color: gold;
+    width:800px;
+    height:400px;
+}
+
+#sec2 {
+    display: flex;
+    justify-content: space-around;
+}
+#sec2 div {
+    display:flex;
+    background-color: green;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:800px;
+    height:400px;
+    margin : 10px;
+}
+#sec2 .sec2sub div {
+    background-color:darkorchid;
+    width: 180px;
+    height: 100px;
+}
+
+@media screen and (max-width:1050px) {
+    header {
+        background-color: initial;
+        flex-direction: column;
+        
+    }
+}
